@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12.my-2
+      h1 Starcups
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.fas.fa-star.text-warning
+            span.fas.fa-star.text-warning
+            span.fas.fa-star.text-warning
+            span.far.fa-star.text-warning
+            span.far.fa-star.text-warning
+          p 125 Hig Street, Reading, RG6 1PS
+          .panel
+            .panel-heading
+              h2.panel-title Время работы
+            .panel-body
+              p ПН-ПТ: 7:00 - 19:00
+              p СБ: 8:00 - 17:00
+              p ВС: Не работает
+          .panel
+            .panel-heading
+              h2.panel-title Удобства
+            .panel-body.d-flex.justify-content-start.flex-wrap
+              .bg-primary.p-1.px-2.me-1.mb-1.text-light.rounded-1 
+                i.fas.fa-check &#32; Горячие напитки
+              .bg-primary.p-1.px-2.me-1.mb-1.text-light.rounded-1
+                i.fas.fa-check &#32; Еда
+              .bg-primary.p-1.px-2.me-1.mb-1.text-light.rounded-1
+                i.fas.fa-check &#32; Быстрый wifi
+        .col-xs-12.col-sm-6.location-map
+          .panel
+            .panel-heading
+              h2.panel-title Местоположение
+            .panel-body
+              iframe.rounded-2(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22921.706965891895!2d42.947981993512485!3d44.099589112933124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40579bf88a46f80d%3A0xc56099b4e6bfbaa6!2z0JvQtdGA0LzQvtC90YLQvtCyLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5!5e0!3m2!1sru!2sru!4v1632048582427!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy")
+      .row.mt-2
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading.d-flex.justify-content-between.align-items-center
+              h2.panel-title Отзывы
+              a.btn.btn-primary(href='/location/review/new') Добавить отзыв
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.fas.fa-star.text-warning
+                      span.fas.fa-star.text-warning
+                      span.fas.fa-star.text-warning
+                      span.far.fa-star.text-warning
+                      span.far.fa-star.text-warning
+                    span.reviewAuthor &#32; Simon Holums
+                    small.reviewTimestamp &#32; 16 July 2013
+                  .col-xs-12.mt-2
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium numquam nesciunt nam, minima rerum expedita reprehenderit nisi maiores quo tenetur deleniti voluptatem sunt, nostrum non deserunt ducimus sit? Accusamus?
+    .col-xs-12.col-md-3
+      p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veritatis accusamus nam dolor tempora earum saepe vero facere, sit ex vel eaque quasi quisquam voluptatibus corporis obcaecati vitae quo amet?
+      p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veritatis accusamus nam dolor tempora earum saepe vero facere, sit ex vel eaque quasi quisquam voluptatibus corporis obcaecati vitae quo amet?

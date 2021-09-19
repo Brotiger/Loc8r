@@ -5,7 +5,25 @@ html
     title= title
     link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+  body.p-0
+    nav.navbar.navbar-static-top.navbar-expand-lg.navbar-dark.bg-primary
+      .container
+        a.navbar-brand(href="/") Loc8r
+        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarSupportedContent
+          ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link.active(aria-current="page" href="/about") О приложении
+            li.nav-item
+              a.nav-link.active(aria-current="page" href="/") Локации
+    .container
+      block content
+
+      footer.mt-2
+        .row
+          .col-xs-12
+            small &copy; Brotiger 2021
+    script(src="https://kit.fontawesome.com/4f55501494.js" crossorigin="anonymous")
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')

@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12.my-2
+      h1 Добавление отзыва
+  .row
+    .col-xs-12.col-md-6
+      form.form-horizontal(action="/location", method="get", role="form")
+        .mb-3.row
+          label.col-sm-2.col-form-label(for="name") Имя
+          .col-sm-10
+            input#name.form-control(type="text")
+        .mb-3.row
+          label.col-sm-2.col-form-label(for="rating") Рейтинг
+          .col-sm-10
+            select#rating.form-control(type="text")
+              option 5
+              option 4
+              option 3
+              option 2
+              option 1
+        .mb-3.row
+          label.col-sm-2.col-form-label(for="review") Отзыв
+          .col-sm-10
+            textarea#review.form-control(type="text")
+        button.btn.btn-primary.float-end Добавить отзыв
