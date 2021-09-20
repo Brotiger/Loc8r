@@ -3,9 +3,8 @@ extends layout
 block content
   #banner.page-header
     .row
-      .col-md-6.col-sm-12
+      .col-md-6.col-sm-12.my-2
         h1= title
   .row
     .col-md-6.col-sm-12
-      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat necessitatibus laudantium mollitia, et nostrum quae rerum temporibus suscipit, nihil at vel doloribus excepturi qui minus quisquam obcaecati voluptate aut.
-      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat necessitatibus laudantium mollitia, et nostrum quae rerum temporibus suscipit, nihil at vel doloribus excepturi qui minus quisquam obcaecati voluptate aut.
+      p !{(content).replace(/\n/g, '<br/>')}
